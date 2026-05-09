@@ -1,0 +1,36 @@
+{
+  "evals": [
+    {
+      "name": "product-launch-with-context",
+      "prompt": "Запускаю платный workshop по Claude Cowork для marketing-команд. 50 мест по $97. Целевая — marketing-менеджеры в компаниях 10-50 человек. Прогон премортема. Горизонт — после запуска.",
+      "should_trigger": true,
+      "expected_profile": "product_launch",
+      "expected_angles_include": ["Клиент", "Конкурент", "Ценообразование"]
+    },
+    {
+      "name": "pricing-change",
+      "prompt": "Премортем: меняю цену с $99 на $149 для существующих клиентов. Горизонт — через 30 дней.",
+      "should_trigger": true,
+      "expected_profile": "pricing_change",
+      "expected_angles_include": ["Существующие клиенты", "Churn"]
+    },
+    {
+      "name": "hire-decision",
+      "prompt": "Найди дыры в плане найма senior backend engineer на текущий runway 18 месяцев.",
+      "should_trigger": true,
+      "expected_profile": "hire"
+    },
+    {
+      "name": "should-i-question-no-trigger",
+      "prompt": "Should I move to a new framework?",
+      "should_trigger": false,
+      "reason": "«should I» намеренно убран из триггеров"
+    },
+    {
+      "name": "stress-test-no-trigger",
+      "prompt": "Stress test this code path",
+      "should_trigger": false,
+      "reason": "«stress test» конфликтует с debug/QA скиллами"
+    }
+  ]
+}

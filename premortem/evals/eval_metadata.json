@@ -1,0 +1,9 @@
+{
+  "skill_name": "premortem",
+  "version": "1.0",
+  "model_default": "opus-4-7",
+  "model_alt": "sonnet-4-6",
+  "expected_total_cost_per_run": "$0.50–2",
+  "expected_duration_per_run": "10–15 min",
+  "trigger_eval_target": "5/5 correct"
+}
